@@ -1,0 +1,152 @@
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+  /* ### Neutral */
+
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+/* Remove default margin */
+body,
+h1,
+p {
+  margin: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background-image: url(images/pattern-background-desktop.svg);
+  background-color: var(--Pale-blue);
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: var(--Dark-blue);
+}
+.card {
+  width: 450px;
+  border-radius: 1rem;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0px 50px 57px -29px rgba(156, 156, 156, 1);
+}
+.card__content {
+  display: grid;
+  padding: 2rem 2.9rem;
+  text-align: center;
+  gap: 1.5rem;
+}
+.card__title {
+  font-weight: 900;
+  padding-bottom: 1rem;
+}
+.card__description {
+  font-weight: 500;
+  color: var(--Desaturated-blue);
+}
+article {
+  background-color: var(--Very-pale-blue);
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+}
+.music__plan {
+  display: flex;
+  align-items: center;
+}
+.plan__type {
+  width: 15rem;
+  margin-left: -3.3rem;
+}
+.plan__option {
+  font-weight: 900;
+}
+.plan__price {
+  color: var(--Desaturated-blue);
+  font-weight: 500;
+}
+.change__plan a {
+  color: var(--Bright-blue);
+  font-weight: bold;
+}
+.change__plan a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--Desaturated-blue);
+}
+button {
+  background-color: var(--Bright-blue);
+  padding: 1rem 7rem;
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 31px 35px 2px rgba(222, 222, 222, 1);
+}
+button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.cancel__option {
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.cancel__option a {
+  text-decoration: none;
+  color: var(--Desaturated-blue);
+}
+.cancel__option a:hover {
+  color: var(--Dark-blue);
+  cursor: pointer;
+}
+@media (max-width: 375px) {
+  .card {
+    width: 320px;
+  }
+  .card__content {
+    padding: 2rem 1.8rem;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+  .card__description {
+    margin: 0rem -0.1rem;
+  }
+  article {
+    background-color: var(--Very-pale-blue);
+    padding: 0.8rem 1rem;
+    border-radius: 1rem;
+  }
+  .plan__type {
+    width: 10rem;
+    margin-left: -1rem;
+  }
+  .change__plan a {
+    font-size: 0.8rem;
+  }
+  button {
+    padding: 1rem 4rem;
+  }
+}

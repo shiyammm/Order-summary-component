@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon-32x32.png"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+  </head>
+  <body>
+      <main>
+        <div class="card">
+          <div class="card__log">
+            <picture>
+              <img
+              class="hero__illustration"
+              src="images/illustration-hero.svg"
+              alt=""
+              />
+            </picture>
+        </div>
+        <div class="card__content">
+          <header>
+          <h1 class="card__title">Order Summary</h1>
+          <p class="card__description">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+          </header>
+          <article>
+            <div class="music__plan">
+              <div class="music__icon">
+                <img src="images/icon-music.svg" alt="">
+              </div>
+              <div class="plan__type">
+                <p class="plan__option">Annual Plan</p>
+                <p class="plan__price">$59.99/year</p>
+              </div>
+              <div class="change__plan"><a href="#">Change</a></div>
+            </div>
+          </article>
+          <section>
+            <button>Proceed to Payment</button>
+            <div class="cancel__option">  
+              <a href="#">Cancel Order</a>
+             </div>
+          </section>
+        </div>
+      </main>
+  </body>
+</html>
